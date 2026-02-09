@@ -13,7 +13,7 @@ func populate() -> void:
 	multimesh.mesh = mesh
 	multimesh.instance_count = layer_count
 	var material : ShaderMaterial = material_override
-	material.set_shader_parameter("layers", float(layer_count))
+	material.set_shader_parameter("layers", float(layer_count + 1))
 	var index := 0
 	while index < layer_count:
 		multimesh.set_instance_transform(index, Transform3D(Basis.IDENTITY, Vector3.ZERO))
