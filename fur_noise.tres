@@ -1,0 +1,12 @@
+[gd_resource type="NoiseTexture2D" format=3 uid="uid://ymwsf0axo0xe"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_61ajb"]
+noise_type = 2
+seed = 727
+frequency = 0.3787
+fractal_octaves = 3
+cellular_distance_function = 1
+
+[resource]
+noise = SubResource("FastNoiseLite_61ajb")
+invert = true
